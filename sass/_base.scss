@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px    10/16px = 62.5%
+}
+
+body {
+    font-family: 'AvertaStd', sans-serif;
+    height: 100%;
+    font-weight: 400;
+    color: #fff;
+    background: $dark;
+}
+
+a {
+    text-decoration: none;
+}
