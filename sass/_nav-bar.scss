@@ -4,6 +4,7 @@
     width: 6rem;
     background-color: #181818;
     z-index: 99;
+    overflow: hidden;
 
 
     .logo {
@@ -11,40 +12,50 @@
 
         &-img {
             display: block;
-            height: 7rem;
-            width: 5rem;
+            height: 8rem;
+            width: 6rem;
         }
     }
 
     .nav {
-
+        height: 100%;
+        margin-top: 7rem;
         .nav-list {
             list-style: none;
-
+     
             .nav-list_item,
             .nav-list_item:active,
             .nav-list_item:link {
-                padding: 2rem;
+                
+                padding: 2rem 0;
                 text-align: center;
                 color: $dark;
                 font-size: 2.2rem;
+                
                  
                 a {
                      color: $dark;
-                     transition: all .2s;
-
-                     &:hover {
+                     transition: all 1s;
+                    
+                     &:hover .fas {
                         color: $primary;
+                        display: none;
                     }
-                 }
 
+                    &:hover .nav-text {
+                        display: inline-block;
+                        text-align: right;
+                    }
+                
+                 }
            
             }
         }
     }
 
     .social {
-
+        height: 100%;
+        margin-top: 3rem;
         .social-list {
             list-style: none;
 
