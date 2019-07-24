@@ -1,5 +1,5 @@
 #nav-bar {
-    display: block;
+    display: inline-block;
     height: 100vh;
     width: 6rem;
     background-color: #181818;
@@ -60,7 +60,7 @@
             list-style: none;
 
             .social-list_item {
-                padding: 1rem;
+                padding: 0.8rem;
                 text-align: center;
                 color: $dark;
                 font-size: 1.5rem;

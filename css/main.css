@@ -25,8 +25,24 @@ a {
   justify-content: center;
   align-items: center; }
 
+#container {
+  display: inline-block;
+  max-width: 90vw;
+  overflow: hidden; }
+
+@media only screen and (max-width: 768px) {
+  #container {
+    max-width: 80vw;
+    max-height: 100%; } }
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 #nav-bar {
-  display: block;
+  display: inline-block;
   height: 100vh;
   width: 6rem;
   background-color: #181818;
@@ -71,7 +87,7 @@ a {
     #nav-bar .social .social-list {
       list-style: none; }
       #nav-bar .social .social-list .social-list_item {
-        padding: 1rem;
+        padding: 0.8rem;
         text-align: center;
         color: #444;
         font-size: 1.5rem; }
