@@ -37,6 +37,11 @@ a {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.heading {
+  font-size: 4rem; }
+  .heading span {
+    display: inline-block; }
+
 #nav-bar {
   position: fixed;
   display: inline-block;
