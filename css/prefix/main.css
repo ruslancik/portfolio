@@ -36,6 +36,16 @@ a {
   -ms-flex-align: center;
   align-items: center; }
 
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, -webkit-max-content));
+  grid-template-columns: repeat(2, minmax(300px, max-content));
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
 #container {
   display: inline-block;
   max-width: 100%;

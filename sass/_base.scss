@@ -30,3 +30,9 @@ a {
     align-items: center;
 }
 
+.content {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(300px,max-content));
+    justify-content: space-between;
+    align-content: center;
+}
