@@ -37,14 +37,17 @@ a {
   align-items: center; }
 
 .content {
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, -webkit-max-content));
-  grid-template-columns: repeat(2, minmax(300px, max-content));
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: center;
   align-content: center; }
+  @media only screen and (max-width: 480px) {
+    .content {
+      grid-template-columns: 1fr; } }
 
 #container {
   display: inline-block;
