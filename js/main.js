@@ -27,6 +27,7 @@ animation();
 
 
 
+
 /*
 // ASYNC Page loader
 var content = document.getElementsByClassName('main-container')[0];
@@ -58,16 +59,53 @@ async function load_home() {
   }
   */
 
+
+  function showLoader(){
+  
+    document.querySelectorAll('.pages ').forEach((el) => {
+    
+       el.addEventListener('click', function(e){
+
+        var container = document.getElementsByClassName('main-container')[0];
+        var canvas = document.getElementById('canvas');
+          
+        container.style = 'display:none';
+        canvas.style = 'display:none';
+
+        document.querySelectorAll('.dot').forEach((el)=> {
+          el.style = 'display:block';
+        })
+
+        setTimeout(()=>{
+          canvas.style = 'display:block';
+          container.style = 'display:block';
+
+          document.querySelectorAll('.dot').forEach((el)=> {
+            el.style = 'display:none';
+          });
+
+        }, 2000)
+
+        e.preventDefault();
+      })
+
+})
+  }
+
+  showLoader();
+
  
 
   document.querySelectorAll('.pages ').forEach((el) => {
     
+  
     el.addEventListener('click', function(e) {
 
+    
     var con = document.getElementsByClassName('main-container')[0];
     var xhr = new XMLHttpRequest();
   
-    xhr.onreadystatechange = function (e) { 
+    xhr.onreadystatechange = function () { 
       if (xhr.readyState == 4 && xhr.status == 200) {
         con.innerHTML = xhr.responseText;
       }
@@ -81,6 +119,7 @@ async function load_home() {
       
       setTimeout(() => {
         animation();
+
       }, 100);
 
     })
