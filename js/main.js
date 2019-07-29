@@ -78,7 +78,7 @@ async function load_home() {
 
         setTimeout(()=>{
           canvas.style = 'display:block';
-          container.style = 'display:block';
+          container.style = 'display:grid';
 
           document.querySelectorAll('.dot').forEach((el)=> {
             el.style = 'display:none';

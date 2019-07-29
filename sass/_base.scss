@@ -30,19 +30,20 @@ a {
     align-items: center;
 }
 
-.content {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-content: center;
+// .content {
+    // width: 100%;
+    // margin: 0 auto;
+    // display: grid;
+    // grid-template-columns: 500px 1fr 1fr 1fr 1fr 1fr;
+    // justify-content: center;
+    // align-content: center;
 
-    & > * {
-        justify-self: center;
-        align-self: center;
-    }
-    @media only screen and (max-width: 480px) {
-        grid-template-columns: 1fr;
-    }
-}
+//     & > * {
+//         justify-self: center;
+//         align-self: center;
+//     }
+//     @media only screen and (max-width: 480px) {
+//         grid-template-columns: 1fr;
+//     }
+// }
 
