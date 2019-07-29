@@ -119,6 +119,7 @@ async function load_home() {
       
       setTimeout(() => {
         animation();
+        tagCloud();
 
       }, 100);
 
@@ -126,3 +127,46 @@ async function load_home() {
     
 
     })
+
+
+    
+
+    /****************/
+    /*TAGCLOUD*/
+    /****************/
+
+    function tagCloud(){
+
+      var settings = {
+        //height of sphere container
+        height: 450,
+        //width of sphere container
+        width: 450,
+        //radius of sphere
+        radius: 150,
+        //rotation speed
+        speed: 1.5,
+        //sphere rotations slower
+        slower: 0.9,
+        //delay between update position
+        timer: 5,
+        //dependence of a font size on axis Z
+        fontMultiplier: 15,
+        //tag css stylies on mouse over
+        hoverStyle: {
+          border : '1px solid #0b2e6f',
+          color: '#0b2e6f'
+        },
+        //tag css stylies on mouse out
+        mouseOutStyle: {
+            border: 'none',
+            color: 'red'
+        }
+        };
+    
+        $(document).ready(function(){
+            $('#tagcloud').tagoSphere(settings);
+        });
+    }
+
+    tagCloud();
