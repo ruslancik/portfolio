@@ -1,3 +1,4 @@
+
 #nav-bar {
     position: fixed;
     display: inline-block;
@@ -7,9 +8,20 @@
     z-index: 9999;
     overflow: hidden;
 
+    @media only screen and (max-width: 800px) {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        display:flex;
+        }
+
 
     .logo {
         background-color: #070707;
+
+        @media only screen and (max-width: 800px) {
+        justify-self: flex-start;
+        }
 
         &-img {
             display: block;
@@ -18,16 +30,33 @@
         }
     }
 
+
     .nav {
         height: 100%;
+        width: 100%;
         margin-top: 7rem;
+
+        @media only screen and (max-width: 800px) {
+            margin: 0;
+            justify-self: space-between;
+            align-self: center;
+            
+            }
+        
         .nav-list {
             list-style: none;
+
+            @media only screen and (max-width: 800px) {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                }
      
             .nav-list_item,
             .nav-list_item:active,
             .nav-list_item:link {
-                
+                            
                 padding: 2rem 0;
                 text-align: center;
                 color: $dark;
@@ -54,11 +83,17 @@
         }
     }
 
-    .social {
-        height: 100%;
-        margin-top: 3rem;
+   
+
+        
         .social-list {
+            height: 100%;
+            width: 100%;
+            margin-top: 3rem;
             list-style: none;
+            @media only screen and (max-width: 800px) {
+                display: none;
+                }
 
             .social-list_item {
                 padding: 0.8rem;
@@ -78,5 +113,4 @@
                
             }
         }
-    }
 }
