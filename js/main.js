@@ -139,13 +139,13 @@ async function load_home() {
 
       var settings = {
         //height of sphere container
-        height: 450,
+        height: 400,
         //width of sphere container
-        width: 450,
+        width: 400,
         //radius of sphere
         radius: 150,
         //rotation speed
-        speed: 1.5,
+        speed: 1,
         //sphere rotations slower
         slower: 0.9,
         //delay between update position
