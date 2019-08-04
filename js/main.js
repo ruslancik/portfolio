@@ -164,8 +164,13 @@ async function load_home() {
         }
         };
     
-        $(document).ready(function(){
+        (function(){
+          $(document).ready(function(){
             $('#tagcloud').tagoSphere(settings);
         });
+        })();
+
+        
     }
 
+    tagCloud();
