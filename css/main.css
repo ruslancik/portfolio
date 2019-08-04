@@ -119,7 +119,7 @@ a {
       grid-template-columns: 1fr; } }
 
 .heading {
-  font-size: 4rem; }
+  font-size: 5rem; }
   .heading span {
     display: inline-block; }
 
@@ -196,6 +196,11 @@ a {
 
 .active a i {
   color: #08fdd8; }
+
+span {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0; }
 
 .nav-text {
   display: none;
