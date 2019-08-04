@@ -135,6 +135,8 @@ async function load_home() {
     /*TAGCLOUD*/
     /****************/
 
+    function tagCloud(){
+
       var settings = {
         //height of sphere container
         height: 450,
@@ -162,8 +164,9 @@ async function load_home() {
         }
         };
     
-      
+        $(document).ready(function(){
+            $('#tagcloud').tagoSphere(settings);
+        });
+    }
 
-    $(document).ready(function(){
-      $('#tagcloud').tagoSphere(settings);
-  });
+    tagCloud();
