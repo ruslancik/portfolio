@@ -169,4 +169,3 @@ async function load_home() {
         });
     }
 
-    tagCloud();
